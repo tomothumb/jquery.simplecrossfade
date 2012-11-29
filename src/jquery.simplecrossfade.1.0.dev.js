@@ -1,5 +1,6 @@
 /**
  * jQuery simplecrossfade v1.0 - 2012-11-10
+ * https://github.com/tomothumb/jquery.simplecrossfade
  * (c) 2012 Tomoyuki Tsujmioto
  * license: www.opensource.org/licenses/mit-license.php
  */
