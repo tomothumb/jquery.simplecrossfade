@@ -1,0 +1,11 @@
+@charset "utf-8";
+/**
+ * jQuery simplecrossfade v1.0.1 - 2012-11-28
+ * https://github.com/tomothumb/jquery.simplecrossfade
+ * (c) 2012 Tomoyuki Tsujmioto
+ * license: www.opensource.org/licenses/mit-license.php
+ */
+
+.scf_target    { position: relative;}
+img.fadeactive,
+img.fadein    { position: absolute; left: 0; top: 0;}
