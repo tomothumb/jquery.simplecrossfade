@@ -1,0 +1,27 @@
+{
+  "name": "jquery.simplecrossfade",
+  "version": "1.0.0",
+  "description": "This is a small jquery plugin of making small image garally.  When you mouseover each thumbnail images, main image will be changed.",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-uglify": "^1.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tomothumb@github.com/tomothumb/jquery.simplecrossfade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomothumb/jquery.simplecrossfade/issues"
+  },
+  "homepage": "https://github.com/tomothumb/jquery.simplecrossfade#readme"
+}
