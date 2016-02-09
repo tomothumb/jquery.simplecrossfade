@@ -47,7 +47,7 @@ suffix_large: "",
 
 ```
 <link rel="stylesheet" type="text/css" media="all" href="jquery.simplecrossfade.css" />
-<script type="text/javascript" src="jquery.simplecrossfade.1.0.min.js"></script>
+<script type="text/javascript" src="jquery.simplecrossfade.js"></script>
 <script type="text/javascript">
 (function($) {
 $(function(){
