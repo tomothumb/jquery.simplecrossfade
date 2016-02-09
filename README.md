@@ -1,11 +1,11 @@
-# jquery.makeanime.js
+# jquery.simplecrossfade.js
 
-jquery plugin for simple image garally
-when you mouseover thumbnail images, main image will change.
+This is a small jquery plugin of making small image garally. 
+When you mouseover each thumbnail images, main image will be changed.
 
----
+```
 
-@example
+//example
 
   $(function() {
    $("#p_subimglist img").simplecrossfade({
@@ -15,10 +15,10 @@ when you mouseover thumbnail images, main image will change.
    });
  });
 
----
+```
 
-@example2
-(option setting for wordpress)
+//example2
+//(option setting for wordpress)
 
   suffix_small: "-150x150",
   suffix_large: "",
@@ -43,4 +43,6 @@ start
     }
   });
 }(jQuery))
-</script>`
+</script>
+
+```
