@@ -15,7 +15,9 @@
         elements.each(function() {
             thumb = $(this);
 
-            // Change main new image
+            /**
+             * Change main new image
+             */
             var changeImg = function (){
                 newimg = $("<img/>")
                     .attr("src", $(this).attr("src").replace(opts.suffix_small,opts.suffix_large) )
@@ -23,18 +25,20 @@
                 $(opts.target).parent().find(".fadeactive").fadeOut(opts.speed_fadeout)
                     .end()
                     .prepend(newimg)
-                ;
-            } // --> End of functioo[changeImg]
+                    ;
+            };
 
-            // Remove main old image
+            /**
+             * Remove main old image
+             */
             var removeImg = function (){
                 $(opts.target).parent()
                     .find(".fadeactive")
                     .remove().end()
                     .find(".fadein")
                     .removeClass(".fadein").addClass("fadeactive")
-                ;
-            } // --> End of functioo[removeImg]
+                    ;
+            };
 
             // event driven
             thumb.on("mouseover", changeImg);
@@ -51,7 +55,7 @@
                 .css({
                     'height': $(opts.target).height()
                 })
-            ;
+                ;
         });
 
 
