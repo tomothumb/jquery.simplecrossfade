@@ -19,6 +19,11 @@
              * Change main new image
              */
             var changeImg = function (){
+                $(this)
+                    .addClass("active")
+                    .siblings().removeClass("active")
+                ;
+                
                 newimg = $("<img/>")
                     .attr("src", $(this).attr("src").replace(opts.suffix_small,opts.suffix_large) )
                     .fadeIn(opts.speed_fadein).addClass("fadein");
