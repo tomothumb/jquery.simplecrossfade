@@ -23,9 +23,15 @@
                     .addClass("active")
                     .siblings().removeClass("active")
                 ;
-                
+
+                var $thumbImgEle;
+                if( $(this).attr("src") ){
+                    $thumbImgEle = $(this);
+                } else {
+                    $thumbImgEle = $(this).find("img").first();
+                }
                 newimg = $("<img/>")
-                    .attr("src", $(this).attr("src").replace(opts.suffix_small,opts.suffix_large) )
+                    .attr("src", $thumbImgEle.attr("src").replace(opts.suffix_small,opts.suffix_large) )
                     .fadeIn(opts.speed_fadein).addClass("fadein");
                 $(opts.target).parent().find(".fadeactive").fadeOut(opts.speed_fadeout)
                     .end()
