@@ -11,7 +11,9 @@ When you mouseover each thumbnail images, main image will be changed.
     suffix_large  : "large",          // suffix of thumnail images
     target        : "div#mainimg img", // jquery selector of img which you want to crossfade
     speed_fadeout : 500,              // fadeout speed which old image hides
-    speed_fadein  : 300               // fadein speed when new image appears
+    speed_fadein  : 300,               // fadein speed when new image appears
+    padding       : 0                  // padding of mainimage area
+
 }
 ```
 
@@ -56,7 +58,8 @@ $(function(){
     suffix_small  : "_S",
     suffix_large  : "_L",
     speed_fadeout : 500,
-    speed_fadein  : 500
+    speed_fadein  : 500,
+    padding       : 20
   });
 });
 </script>

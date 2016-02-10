@@ -36,7 +36,7 @@
                 $(opts.target).parent().find(".fadeactive").fadeOut(opts.speed_fadeout)
                     .end()
                     .prepend(newimg)
-                    ;
+                ;
             };
 
             /**
@@ -48,7 +48,7 @@
                     .remove().end()
                     .find(".fadein")
                     .removeClass(".fadein").addClass("fadeactive")
-                    ;
+                ;
             };
 
             // event driven
@@ -64,9 +64,9 @@
                 })
                 .parent()
                 .css({
-                    'height': $(opts.target).height()
+                    'height': $(opts.target).height() + ( opts.padding * 2 )
                 })
-                ;
+            ;
         });
 
 
@@ -77,11 +77,12 @@
 
     // Default setting of seplugin[simplecrossfade]
     $.fn.simplecrossfade.defaults = {
-        suffix_small  : "small",          // suffix of thumnail images
-        suffix_large  : "large",          // suffix of thumnail images
+        suffix_small  : "small",           // suffix of thumnail images
+        suffix_large  : "large",           // suffix of thumnail images
         target        : "div#mainimg img", // jquery selector of img which you want to crossfade
-        speed_fadeout : 500,              // fadeout speed which old image hides
-        speed_fadein  : 300               // fadein speed when new image appears
+        speed_fadeout : 500,               // fadeout speed which old image hides
+        speed_fadein  : 300,               // fadein speed when new image appears
+        padding       : 0                  // padding of mainimage area
     };
 
 }(jQuery));
