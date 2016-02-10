@@ -7,12 +7,13 @@ When you mouseover each thumbnail images, main image will be changed.
 ```
 // Default options
 {
-    suffix_small  : "small",          // suffix of thumnail images
-    suffix_large  : "large",          // suffix of thumnail images
-    target        : "div#mainimg img", // jquery selector of img which you want to crossfade
-    speed_fadeout : 500,              // fadeout speed which old image hides
-    speed_fadein  : 300,               // fadein speed when new image appears
-    padding       : 0                  // padding of mainimage area
+    suffix_small  : "small",        // (String) suffix of thumnail images
+    suffix_large  : "large",        // (String) suffix of thumnail images
+    target        : "div#mainimg", // (String) jquery selector of img which you want to crossfade
+    speed_fadeout : 500,            // (Number) fadeout speed which old image hides
+    speed_fadein  : 300,             // (Number) fadein speed when new image appears
+    padding       : 0,                // (Number) padding of mainimage area
+    link          : false            // (Boolean) Main image with link
 
 }
 ```
@@ -59,7 +60,8 @@ $(function(){
     suffix_large  : "_L",
     speed_fadeout : 500,
     speed_fadein  : 500,
-    padding       : 20
+    padding       : 20,
+    link          : true
   });
 });
 </script>
