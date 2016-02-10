@@ -16,7 +16,6 @@
             var $Ele = $("<img/>")
                     .attr("src", src )
                 ;
-
             return $Ele;
         };
 
@@ -51,16 +50,15 @@
                 if(opts.link===true){
                     $imgEle = makeAnchor($imgEle);
                 }
-                $imgEle
-                    // .fadeIn(opts.speed_fadein)
-                    .addClass("fadein");
-
+                $imgEle.addClass("fadein");
 
                 $(opts.target)
                     .find(".fadeactive").fadeOut(opts.speed_fadeout)
                     .end()
                     .prepend($imgEle)
                 ;
+
+                opts.callback();
             };
 
             /**
@@ -107,6 +105,7 @@
         speed_fadein  : 300,           // (Number) fadein speed when new image appears
         padding       : 0,             // (Number) padding of mainimage area
         link          : false,         // (Boolean) Main image with link
+        callback      : function(){}   // (function) Define Callback function
     };
 
 }(jQuery));

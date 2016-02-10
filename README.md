@@ -13,7 +13,8 @@ When you mouseover each thumbnail images, main image will be changed.
     speed_fadeout : 500,            // (Number) fadeout speed which old image hides
     speed_fadein  : 300,             // (Number) fadein speed when new image appears
     padding       : 0,                // (Number) padding of mainimage area
-    link          : false            // (Boolean) Main image with link
+    link          : false.            // (Boolean) Main image with link
+    callback      : function(){}   // (function) Define Callback function
 
 }
 ```
@@ -61,7 +62,11 @@ $(function(){
     speed_fadeout : 500,
     speed_fadein  : 500,
     padding       : 20,
-    link          : true
+    link          : true,
+    callback      : function(){
+      console.log("callback:: START");
+      console.log("callback:: END");
+    }
   });
 });
 </script>
